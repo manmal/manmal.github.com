@@ -1,0 +1,27 @@
+.follow {
+  background: url(sprite.png) -261px -43px no-repeat;
+  display: block;
+  width: 149px;
+  height: 36px;
+}
+
+.follow_pressed {
+  background: url(sprite.png) -261px 0px no-repeat;
+  display: block;
+  width: 149px;
+  height: 36px;
+}
+
+.logo {
+  background: url(sprite.png) 0px 0px no-repeat;
+  display: block;
+  width: 259px;
+  height: 65px;
+}
+
+.photo {
+  background: url(sprite.png) 0px -67px no-repeat;
+  display: block;
+  width: 163px;
+  height: 177px;
+}

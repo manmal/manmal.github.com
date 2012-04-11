@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<div class="content">    
-	{% include post_header.html %}
-    {{ content }}		
-</div>
-    
+<header>
+	<h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
+    <span class="postdate" style="margin-right: 7px;">{{ page.date | date: "%Y %m %d" }}</span>
+	{% for tag in page.tags %}
+ 		<a href="/tags/{{ tag }}" class="tag" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
+ 	{% endfor %}
+	<div style="height: 10px;"></div>
+</header>
+{{ content }}
