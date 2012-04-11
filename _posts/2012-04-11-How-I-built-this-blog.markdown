@@ -173,8 +173,10 @@ You may have noticed that the generated highlighting is not perfect, and I might
 
 <h2>JS or No</h2>
 <p>
-Fully blown JS frameworks like jQuery have found their way into most blog templates, be it sensible or not. Since low loading time is one of my main priorities for this blog, I meditated if I needed any client-side code - turns out: <b>No</b>.<br>
-I might add Disqus and Google Analytics support later on, but for the time being, I'm fine with plain HTML & CSS, and the following HTML5 hack for older browsers.
+Fully blown JS frameworks like jQuery have found their way into most blog templates, be it sensible or not. Since low loading time is one of my main priorities for this blog, I meditated if I needed any client-side code - turns out: <b>No</b>.
+I have been able to achieve everything I wanted for this blog, without JS.</p>
+<p>
+I might add Disqus and Google Analytics support later on, but for the time being, I'm fine with plain HTML & CSS plus the following HTML5 JS hack for older browsers.
 </p>
 
 <h2>HTML5 for Older Browsers</h2>
