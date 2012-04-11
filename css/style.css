@@ -1,3 +1,7 @@
+@font-face {font-family: 'Museo-700';src: url('webfonts/21AFD7_0_0.eot');src: url('webfonts/21AFD7_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/21AFD7_0_0.woff') format('woff'),url('webfonts/21AFD7_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-300';src: url('webfonts/21AFD7_1_0.eot');src: url('webfonts/21AFD7_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/21AFD7_1_0.woff') format('woff'),url('webfonts/21AFD7_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-500';src: url('webfonts/21AFD7_2_0.eot');src: url('webfonts/21AFD7_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/21AFD7_2_0.woff') format('woff'),url('webfonts/21AFD7_2_0.ttf') format('truetype');}
+
 html{font-family:HelveticaNeue,Arial,sans-serif;}
 body{background:url('../img/light_bg.png');}
 a{-webkit-transition:color 0.2s linear;-moz-transition:color 0.2s linear;transition:color 0.2s linear;}
