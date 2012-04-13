@@ -196,3 +196,8 @@ I might add Disqus and Google Analytics support later on, but for the time being
 To make sure my blog looks the same for most of the users (I developed it with Safari), I started some other browsers (FF, Chrome, Opera) and only minor problems showed: FF sets font-weight to bold for headings (which I disabled then), and Opera made Pygment's syntax highlighting appear super-huge (which I don't care about).
 </p>
 <p>Anxiously, I then booted into Windows and started IE6.
+	
+<h2>Remaining Issues</h2>
+<p>
+When validating my blog's markup via <a href="http://html5.validator.nu/" target="_blank">html5.validator.nu</a>, I got errors because all figure tags were wrapped in paragraph (p) tags - it seems Jekyll generates those without asking. I will look into this soon.
+</p>
