@@ -197,6 +197,16 @@ To make sure my blog looks the same for most of the users (I developed it with S
 </p>
 <p>Anxiously, I then booted into Windows and started IE6.
 	
+<h2>Atom Feed</h2>
+<p>
+To provide an Atom feed for my blog, I copied one of the many templates floating around the interwebs and made some modifications like filling in my name (TODO link to Gist), and saved it as <b>atom.xml</b>. Currently, the posts are sent in whole on every Atom request (making for a lot of traffic) - I might shorten the posts later on, but for the time being I have not found a way to do this in Liquid.
+</p>
+	
+<h2>Deploying to Github</h2>
+<p>
+Pushing a Jekyll site to Github was straightforward - after setting up a public repo called <b>manmal.github.com</b>, I just pushed it up there, and, after a few minutes, received the first build notification per email. That was easy!
+</p>
+	
 <h2>Remaining Issues</h2>
 <p>
 When validating my blog's markup via <a href="http://html5.validator.nu/" target="_blank">html5.validator.nu</a>, I got errors because all figure tags were wrapped in paragraph (p) tags - it seems Jekyll generates those without asking. I will look into this soon.
