@@ -4,7 +4,7 @@
  <title>Manuel Maly</title>
  <link href="http://manmal.github.com/atom.xml" rel="self"/>
  <link href="http://manmal.github.com/"/>
- <updated>2012-08-27T15:00:07+02:00</updated>
+ <updated>2012-08-27T15:06:14+02:00</updated>
  <id>http://manmal.github.com</id>
  <author>
    <name>Manuel Maly</name>
@@ -18,7 +18,7 @@
    <id>http://manmal.github.com/blog/HN-Hacker-News-Reader</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;/img/2012-08-27/hn-screenshots.png&quot; target=&quot;_blank&quot; style=&quot;border:none;&quot;&gt;&lt;img src=&quot;/img/2012-08-27/hn-screenshots.png&quot; style=&quot;width: 600px; height: 370px; display:block; margin: 0 auto;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;button&quot; style=&quot;font-size:40px; margin: 20px auto; width: 400px; padding:20px;&quot;&gt;Get it at Google Play&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.manuelmaly.hn&quot; target=&quot;_blank&quot; class=&quot;button&quot; style=&quot;font-size:40px; margin: 20px auto; width: 400px; padding:20px;&quot;&gt;Get it at Google Play&lt;/a&gt;
 &lt;a href=&quot;https://github.com/manmal/hn-android&quot; target=&quot;_blank&quot; class=&quot;button&quot; style=&quot;font-size:40px; margin: 20px auto; width: 400px; padding:20px;&quot;&gt;Source at Github&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Presenting HN Beta&lt;/h2&gt;
