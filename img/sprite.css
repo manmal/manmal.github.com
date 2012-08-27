@@ -1,15 +1,15 @@
-.follow {
-  background: url(sprite.png) -261px -43px no-repeat;
+.button {
+  background: url(sprite.png) -264px 0px no-repeat;
   display: block;
-  width: 149px;
-  height: 36px;
+  width: 146px;
+  height: 41px;
 }
 
-.follow_pressed {
-  background: url(sprite.png) -261px 0px no-repeat;
+.button_pressed {
+  background: url(sprite.png) -264px -52px no-repeat;
   display: block;
-  width: 149px;
-  height: 36px;
+  width: 146px;
+  height: 41px;
 }
 
 .logo {

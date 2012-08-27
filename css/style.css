@@ -5,15 +5,15 @@
 html{font-family:HelveticaNeue,Arial,sans-serif;}
 body{background:url('../img/light_bg.png');}
 a{-webkit-transition:color 0.2s linear;-moz-transition:color 0.2s linear;transition:color 0.2s linear;}
-h1{font-family:Museo-500;color:#ff002a;font-size:1.5em;margin-bottom:5px;font-weight: normal;}
+h1{font-family:Museo-500;color:#ff002a;font-size:1.8em;margin-bottom:5px;font-weight: normal;}
 h1 a{color:#ff002a;text-decoration:none;}
 h1 a:hover{color:#000;}
-h2{font-weight:bold;font-size:1.2em;margin-top:30px;margin-bottom:15px;color:#ff002a;}
+h2{font-weight:bold;font-size:1.4em;margin-top:30px;margin-bottom:15px;color:#69242c;}
 hr{border:1px dashed #888;margin:30px 0;}
 ul{font-size:1.1em;list-style-type:disc;list-style-position:inside;padding-left:15px;line-height:130%;}
 a.tag{color:#aaa;text-decoration:none;display:inline-block;margin-right:7px;}
 a.tag:hover{color:#000;}
-::selection { background:#ff002a; color:#fff; text-shadow:0px 0px 0px #000000; filter:dropshadow(color=#000,offx=0,offy=0);}
+::selection { background:#119991; color:#fff; text-shadow:0px 0px 0px #000000; filter:dropshadow(color=#000,offx=0,offy=0);}
 ::-moz-selection { background:#ff002a; color:#fff; text-shadow:0px 0px 0px #000000;}
 ::-webkit-selection { background:#ff002a; color:#fff; text-shadow:0px 0px 0px #000000;}
 .round-thing{background:url('/img/round_thing.png');height:4px;margin-top:15px;}
@@ -25,7 +25,7 @@ article p a:hover{color: #ff002a;}
 article div.spacer{height:2px;}
 aside{width:212px; padding-left: 3px; display:inline-block;text-align:left;vertical-align:top;}
 aside img{margin-top:-4px;margin-left:-14px;}
-.photo{margin-top:-4px;width:163px;height:177px;background:url(../img/sprite.png) 0px -67px no-repeat;display:block;}
+.photo{margin-top:-6px;width:163px;height:177px;background:url(../img/sprite.png) 0px -67px no-repeat;display:block;}
 #navsuperwrap{background:url('../img/dark_stripes.png') repeat;overflow-y:visible; min-width: 880px;}
 #navwrap{width:840px;margin:0px auto;padding: 0 20px;}
 nav{float:right;margin-top:34px; display: inline-block;}
@@ -35,8 +35,9 @@ nav a:hover{color:white;}
 .logo{background:url(../img/sprite.png) 0px 0px no-repeat;display:inline-block;width:259px;height:65px;margin-top:15px;}
 
 .postdate{color:#777;}
-a.twitterfollow{font-family:Museo-500;text-decoration:none;color:white;background:url(../img/sprite.png) -261px -43px no-repeat;display:block;width:149px;height:36px;line-height:36px;margin:10px 15px;text-shadow:0px -1px 1px #000000;filter:dropshadow(color=#000,offx=0,offy=-1); text-align: center;}
-a.twitterfollow:active{background:url(../img/sprite.png) -261px 0px no-repeat;}
+a.button{font-family:Museo-300;font-size:18px;text-decoration:none;color:#48433e;display: block;padding: 10px; text-shadow:0px 1px 1px #fff;filter:dropshadow(color=#fff,offx=0,offy=1); text-align: center; -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1.0); box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1.0); -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.3);}
+/*a.button{font-family:Museo-300;font-size:18px;text-decoration:none;color:#4a4641;background: url(../img/sprite.png) -264px 0px no-repeat;display: block;width: 146px;height: 41px;line-height:41px;margin:10px 15px;text-shadow:0px 1px 1px #fff;filter:dropshadow(color=#fff,offx=0,offy=1); text-align: center;}*/
+a.button:hover{-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); background-color: rgba(0, 0, 0, 0.1);}
 
 /* Syntax highlighting w/ Pygments:*/
 .highlight{font-family:Monaco,monospace;background-color:#272822;border:1px solid #000000;padding:10px;font-size:1.3em;margin:10px 0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;text-shadow:none;filter:dropshadow(color=#fff,offx=0,offy=0);line-height:110%;}
