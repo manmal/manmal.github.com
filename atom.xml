@@ -1,26 +1,355 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Manuel Maly</title>
  <link href="http://manmal.github.com/atom.xml" rel="self"/>
  <link href="http://manmal.github.com/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <updated>2012-08-27T14:33:22+02:00</updated>
  <id>http://manmal.github.com</id>
  <author>
    <name>Manuel Maly</name>
  </author>
  
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://manmal.github.com{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://manmal.github.com{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>HN - Hacker News Reader for Android</title>
+   <link href="http://manmal.github.com/blog/HN-Hacker-News-Reader"/>
+   <updated>2012-08-27T00:00:00+02:00</updated>
+   <id>http://manmal.github.com/blog/HN-Hacker-News-Reader</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;/img/2012-08-27/hn-screenshots.png&quot; target=&quot;_blank&quot; style=&quot;border:none;&quot;&gt;&lt;img src=&quot;/img/2012-08-27/hn-screenshots.png&quot; style=&quot;width: 600px; height: 370px; display:block; margin: 0 auto;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;button&quot; style=&quot;font-size:40px; margin: 20px auto; width: 400px; padding:20px;&quot;&gt;Get it at Google Play&lt;/a&gt;
+&lt;a href=&quot;https://github.com/manmal/hn-android&quot; target=&quot;_blank&quot; class=&quot;button&quot; style=&quot;font-size:40px; margin: 20px auto; width: 400px; padding:20px;&quot;&gt;Source at Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Presenting HN Beta&lt;/h2&gt;
+
+&lt;p&gt;I have been writing a Hacker News client for Android as a pet project, with the intention to eventually open-source it. Due to consulting and development work, I currently don't have the time to finish the app 100% in the next days, so - i decided to just release it now :)&lt;/p&gt;
+
+&lt;h2&gt;Why another HN reader app?&lt;/h2&gt;
+
+&lt;p&gt;The existing HN Android clients I know of are instable and don't look very good on my 4.0 phone. Most of them (or perhaps all) rely on external parsers which seem to break or go offline from time to time. I was really frustrated with the feed not loading 70% of the time, and comments not loading 90% of the time.&lt;/p&gt;
+
+&lt;p&gt;So, I decided to build myself an app which parses Hacker News' HTML itself, and which will therefore work as long as HN is online (with some maintenance needed if they make structural HTML changes). I also tried to make the app less cluttered and give it a beautiful UI, with colors similar to HN's. Please judge for yourself if I managed to do that :)&lt;/p&gt;
+
+&lt;h2&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display frontpage posts&lt;/li&gt;
+&lt;li&gt;Display comments&lt;/li&gt;
+&lt;li&gt;Display stories in a view inside the app&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Planned Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Additions to story view (Back &amp;amp; Share icons, loading indicator)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dribbble.com/shots/627773-HN-screenshot-2-WIP&quot;&gt;Improved comments view&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ability to provide login data and upvote posts&lt;/li&gt;
+&lt;li&gt;Ability to switch between comments and story view&lt;/li&gt;
+&lt;li&gt;Maybe: Ability to post comments&lt;/li&gt;
+&lt;li&gt;Maybe: Switch to new posts on HN&lt;/li&gt;
+&lt;li&gt;Maybe: Open &amp;amp; close comment thread levels (e.g., hide/show all subcomments of one certain comment)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Known Issues&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML parsing will sometimes break for special cases - whenever you find that a view does not eventually load, please tweet me at @manuelmaly&lt;/li&gt;
+&lt;li&gt;Loading a huge number of comments is sluggish on modern devices, and VERY sluggish on old devices. That can't be helped if the feed is parsed by the device itself.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Suggestions &amp;amp; Feedback&lt;/h2&gt;
+
+&lt;p&gt;Please tweet suggestions and feedback at &lt;a href=&quot;https://twitter.com/manuelmaly&quot;&gt;@manuelmaly&lt;/a&gt;, or file an issue at the &lt;a href=&quot;https://github.com/manmal/hn-android/issues&quot;&gt;Github Issues page&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>How I Designed & Built This Minimalistic Blog</title>
+   <link href="http://manmal.github.com/blog/How-I-built-this-blog"/>
+   <updated>2012-08-25T00:00:00+02:00</updated>
+   <id>http://manmal.github.com/blog/How-I-built-this-blog</id>
+   <content type="html">&lt;p&gt;
+I'm a native Android &amp; iOS developer, and not exactly doing web development every day - I'm surely ignorant of some fancy twists (tricking IE6 into doing things). However, I have spent upwards of 1000 hours with HTML 4 and CSS 1/2 in my teens, building a PHP CMS for a local shop and other stuff. To refresh my web development abilities, I decided to &lt;b&gt;design my blog from scratch&lt;/b&gt; - CSS and HTML-wise.
+&lt;br&gt;
+This post is about how I did it.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Requirements&lt;/h2&gt;
+
+
+&lt;p&gt;What I want for my blog:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Minimalistic but beautiful design&lt;/li&gt;
+    &lt;li&gt;Low loading times (few requests, lean resources)&lt;/li&gt;
+    &lt;li&gt;Inexpensive hosting&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;Technical Setup&lt;/h2&gt;
+
+
+
+
+&lt;p&gt;
+    After considering my requirements, I came up with this setup:
+&lt;/p&gt;
+
+
+
+
+&lt;ul&gt;
+    &lt;li&gt;Jekyll&lt;/li&gt;
+    &lt;li&gt;HTML 5, CSS 3&lt;/li&gt;
+    &lt;li&gt;No self-written JS (for the time being)&lt;/li&gt;
+    &lt;li&gt;Widgets for added functionality&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;p&gt;
+    I chose &lt;a href=&quot;https://github.com/mojombo/jekyll&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Jekyll&lt;/b&gt;&lt;/a&gt;, a semi-static site framework for Rails, for reasons of &lt;b&gt;performance and flexibility&lt;/b&gt;. Pages reportedly load very fast, and you can host them at your own Github subdomain - neat! While your pages are mostly served statically, you can add &quot;dynamic&quot; functionality by using external services, like in-site Google search, all the web's widgets, and even comments (e.g., via Disqus). Eric Jones went to the absolute max with widget integration in his &lt;a href=&quot;http://erjjones.github.com/blog/How-I-built-my-blog-in-one-day/&quot; target=&quot;_blank&quot;&gt;blog&lt;/a&gt; - a great resource for reference!
+&lt;/p&gt;
+
+
+&lt;p&gt;
+As I thought it would not be necessary, I did not employ SASS. If CSS code becomes any more complicated, I will probably make the &lt;a href=&quot;http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/&quot; target=&quot;_blank&quot;&gt;switch&lt;/a&gt;.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Choosing Layout and Colors&lt;/h2&gt;
+
+
+&lt;p&gt;
+I then surfed the web for blog layouts I wanted to borrow from - and found &lt;a href=&quot;http://www.philterdesign.com/?p=541&quot; target=&quot;_blank&quot;&gt;this one&lt;/a&gt; by Phil Chung. Then kicked up Photoshop, loaded a screenshot of Phil's blog, and created a &lt;b&gt;color palette&lt;/b&gt; by overlaying all relevant elements. It's advisable to use an actual layout to find a palette, because a color's effect depends on the amount of screen space it is given.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Over time I have grown addicted to this shade of purplish red: &lt;span style=&quot;color: #ff002a;&quot;&gt;&lt;b&gt;#ff002a&lt;/b&gt;&lt;/span&gt; - call it my favourite color - and now I can finally put it to use in my own blog.
+Also, I like &lt;b&gt;high contrasts and warm colors&lt;/b&gt; (that means, red or orange tint), as they are easy on the eye and comforting.
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&quot;/img/2012-05-23/layout_and_palette.png&quot; style=&quot;margin: 20px auto; display: block;&quot; title=&quot;Talent borrows...&quot;&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2&gt;Selecting Typefaces&lt;/h2&gt;
+
+
+&lt;p&gt;
+The &lt;a href=&quot;http://www.myfonts.com/fonts/exljbris/museo/&quot; target=&quot;_blank&quot;&gt;Museo family&lt;/a&gt; is really great, I'm definitely a Museo fan (gotta watch out that I don't use it too often). Also, some of them are free, and can be downloaded at MyFonts as drop-in web fonts, readily shipped with &lt;a href=&quot;http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax&quot; target=&quot;_blank&quot;&gt;bulletproof&lt;/a&gt; CSS code. Therefore, I'm using &lt;b&gt;Museo 300&lt;/b&gt; and &lt;b&gt;Museo 500&lt;/b&gt; for headings and the navigation menu.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+For the sake of readability of the body copy, I opted for &lt;b&gt;Helvetica Neue&lt;/b&gt;, and as a fallback for Windows users, &lt;b&gt;&lt;span style=&quot;font-family: Arial&quot;&gt;Arial&lt;/span&gt;&lt;/b&gt; (yeah, I know :/).
+&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;Font size&lt;/b&gt; is not so easy to get right, but is VERY important for readability. There are people claiming that going below 16 points would be stupid. I am going with 1.1em which amounts to 19px on my 15&quot; Macbook Pro at standard browser settings. It amounts to &lt;b&gt;11-15 words per line&lt;/b&gt;, which will (hopefully) average in the oft-praised &lt;a href=&quot;http://www.maxdesign.com.au/articles/em/&quot; target=&quot;_blank&quot;&gt;12 words per line&lt;/a&gt;.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Adding Eye Candy&lt;/h2&gt;
+
+
+&lt;p&gt;
+As a Photoshop addict, I HAD to take the chance to play around with &lt;b&gt;subtle effects and textures&lt;/b&gt;. After all, the little details make all the difference.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+After layout, colors, and typefaces had been set, I headed over to &lt;a href=&quot;http://subtlepatterns.com&quot; target=&quot;_blank&quot;&gt;Subtle Patterns&lt;/a&gt; to find nice textures. With some brightness modifications to &lt;a href=&quot;http://subtlepatterns.com/?p=203&quot; target=&quot;_blank&quot;&gt;one of those&lt;/a&gt;, a &lt;b&gt;pattern for the header area&lt;/b&gt; was born, looking somewhat like denim cloth:
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&quot;/img/2012-05-23/stripes_pattern.png&quot; title=&quot;Dark Stripes&quot; style=&quot;margin: 20px auto; display: block;&quot;&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;
+The &lt;b&gt;main area&lt;/b&gt; (on which you are currently reading) also needed some &lt;b&gt;texture&lt;/b&gt;, so I went the good ol' noise route: Added &lt;a href=&quot;/img/2012-05-23/transparent_noise.png&quot; target=&quot;_blank&quot;&gt;this pattern&lt;/a&gt; as pattern overlay, with blend mode Luminosity and Opacity set to 10% - voilá.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;To add a fancy touch to the banner, I decided to go with a &lt;b&gt;pattern of cut circles&lt;/b&gt; at its bottom, softening the transition from dark to bright. Adding a white inner shadow (angle: 90°, distance: 1px, size: 0px, blend mode: Normal) gives it a slight 3D effect:
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&quot;/img/2012-05-23/round_thing_enlarged.png&quot; style=&quot;margin: 20px auto; display: block;&quot; title=&quot;Pseudo 3D effect pattern&quot;&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;b&gt;photo of me&lt;/b&gt; at the top left of every page makes the blog more personal (at least I hope so :^) ), and I wanted it to look like a physical print of a photograph, stuck into a fold of the &quot;blog paper&quot; (curious people, look into the &lt;a href=&quot;/img/2012-05-23/photo.psd&quot; target=&quot;_blank&quot;&gt;PSD file&lt;/a&gt;):
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&quot;/img/2012-05-23/photo.png&quot; title=&quot;Dark Stripes&quot; style=&quot;margin: 20px auto; display: block;&quot;&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2&gt;Slicing It Up&lt;/h2&gt;
+
+
+&lt;p&gt;
+Having finished the Photoshop mockup, I proceeded to extract images from it and created a layout in CSS. 
+The first thing I did was load a &lt;a href=&quot;http://meyerweb.com/eric/tools/css/reset/&quot;&gt;CSS Reset&lt;/a&gt; to minimize strange cross-browser surprises. After that, the layout elements were placed in their own HTML containers and assigned CSS layout properties. Curious people, look at the details in the site's &lt;a href=&quot;/css/style.css&quot; target=&quot;_blank&quot;&gt;main CSS file&lt;/a&gt;, or better, use your browser's element inspector. The box layout looks like this (click to enlarge):
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;a href=&quot;/img/2012-05-23/layout_detailed.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/2012-05-23/layout_detailed_small.png&quot; title=&quot;Dark Stripes&quot; style=&quot;margin: 20px auto; display: block;&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;
+As every resource (JS, CSS, Image,...) is served in its own request, a page's loading time can be lowered by putting as many images as possible in &lt;b&gt;sprites&lt;/b&gt;. I used &lt;a href=&quot;TODO&quot; target=&quot;_blank&quot;&gt;SpriteRight&lt;/a&gt; to wrap all reoccurring, non-repeated images into one single file, which currently looks like this:
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&quot;/img/2012-05-23/sprite.png&quot; style=&quot;margin: 20px auto; display: block;&quot; title=&quot;Sprite&quot;&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2&gt;More CSS Eye Candy&lt;/h2&gt;
+
+
+
+
+&lt;p&gt;
+Holding the finished HTML &amp; essential CSS code in my hands, I went on to add some more details to make the page look more refined.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;b&gt;Shadowed text&lt;/b&gt; looks very nice on most backgrounds, as subtle as the effect may be (under some lighting conditions, it's not visible on this blog). A white shadow added to a dark font increases the contrast, making it look crisper by seemingly sharpening the edges.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+Fancy &lt;b&gt;link color hover transitions&lt;/b&gt; can be had by adding some CSS: 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;One more subtlety is the manipulation of &lt;b&gt;text selection&lt;/b&gt; background and color. In my case, I also had to disable text shadows:&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Code Highlighting&lt;/h2&gt;
+
+
+
+
+&lt;p&gt;
+Jekyll comes with support for &lt;b&gt;Pygments&lt;/b&gt;, a python syntax highlighter which also generates CSS code based on predefined styles. Installing and configuring Pygments is straightforward on OSX (Python is preinstalled on OSX &gt;= 10.4):
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+You may have noticed that the generated highlighting is not perfect, and I might therefore switch to another technology - e.g. &lt;a href=&quot;http://daniel-salazar.com/jekyll/code-highlighting-with-coderay-in-jekyll.html&quot; target=&quot;_blank&quot;&gt;CodeRay&lt;/a&gt;.    
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;JS or No&lt;/h2&gt;
+
+
+&lt;p&gt;
+Fully blown JS frameworks like jQuery have found their way into most blog templates, be it sensible or not. Since low loading time is one of my main priorities for this blog, I meditated if I needed any client-side code - turns out: &lt;b&gt;No&lt;/b&gt;.
+I have been able to achieve everything I wanted for this blog, without JS.&lt;/p&gt;
+
+
+&lt;p&gt;
+I might add Disqus and Google Analytics support later on, but for the time being, I'm fine with plain HTML &amp; CSS plus the following HTML5 JS hack for older browsers.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;HTML5 for Older Browsers&lt;/h2&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;&lt;a href=&quot;http://code.google.com/p/html5shiv/&quot; target=&quot;_blank&quot;&gt;html5shiv&lt;/a&gt;&lt;/b&gt; provides a drop-in JS snippet to force browsers like IE6 to eat your HTML5, and you need not host it yourself: 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+I have not tested it though. :)
+&lt;/p&gt;
+
+
+&lt;h2&gt;Cross-Browser Testing&lt;/h2&gt;
+
+
+&lt;p&gt;
+To make sure my blog looks the same for most of the users (I developed it with Safari), I started some other browsers (FF, Chrome, Opera) and only minor problems showed: FF sets font-weight to bold for headings (which I disabled then), and Opera made Pygment's syntax highlighting appear super-huge (which I don't care about).
+&lt;/p&gt;
+
+
+&lt;p&gt;Currently, I haven't found time to test Internet Explorer support (no Windows VM installed currently) - I will fix it if someone tells me there is a problem.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Atom Feed&lt;/h2&gt;
+
+
+&lt;p&gt;
+To provide an Atom feed for my blog, I copied one of the many templates floating around the interwebs and made some modifications like filling in my name, and saved it as &lt;b&gt;&lt;a href=&quot;https://github.com/manmal/manmal.github.com/blob/master/atom.xml&quot; target=&quot;_blank&quot;&gt;atom.xml&lt;/a&gt;&lt;/b&gt;. Currently, the posts are sent in whole on every Atom request (making for a lot of traffic) - I might shorten the posts later on, but for the time being I have not found a way to do this in Liquid.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Deploying to Github&lt;/h2&gt;
+
+
+&lt;p&gt;
+Pushing a Jekyll site to Github was straightforward - after setting up a public repo called &lt;b&gt;manmal.github.com&lt;/b&gt;, I just pushed it up there, and, after a few minutes, received the first build notification per email. That was easy!
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Remaining Issues&lt;/h2&gt;
+
+
+&lt;p&gt;
+When validating my blog's markup via &lt;a href=&quot;http://html5.validator.nu/&quot; target=&quot;_blank&quot;&gt;html5.validator.nu&lt;/a&gt;, I got errors because all figure tags were wrapped in paragraph (p) tags - it seems Jekyll generates those without asking. I will look into this soon.
+&lt;/p&gt;
+
+</content>
+ </entry>
+ 
  
 </feed>
