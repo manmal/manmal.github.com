@@ -3,9 +3,13 @@
 		<a href="/" class="logo"></a>		
 		<nav style="display: inline-block;">
 			<ul>
-				<li style="display: inline-block;"><a href="/" class="current">Blog</a></li>
-				<li style="display: inline-block; margin-left: 30px;"><a href="https://github.com/manmal" target="_blank">Github</a></li>
-				<li style="display: inline-block; margin-left: 30px;"><a href="/hireme.html">Hire me</a></li>
+				{% for link in site.navigation %}
+				  {% assign current = nil %}
+				  {% if page.url == link.url or page.layout == link.layout %}
+			        {% assign current = 'current' %}
+			      {% endif %}
+				<li style="display: inline-block; {% if forloop.first == false %}margin-left: 30px;{% endif %}"><a href="{{ link.url }}" class="{{ current }}">{{ link.text }}</a></li>
+				{% endfor %}
 			</ul>
 		</nav>
 	</div>

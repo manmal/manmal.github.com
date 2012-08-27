@@ -18,7 +18,7 @@ a.tag:hover{color:#000;}
 ::-webkit-selection { background:#ff002a; color:#fff; text-shadow:0px 0px 0px #000000;}
 .round-thing{background:url('/img/round_thing.png');height:4px;margin-top:15px;}
 #pagewrap{width:880px;margin:30px auto;}
-article{width:640px; padding-right: 20px; display:inline-block;margin-top:10px;color:#2a2a2a;text-shadow:0px 1px 1px #ffffff;filter:dropshadow(color=#ffffff,offx=0,offy=1);}
+article{width:640px; padding-right: 20px; display:inline-block;margin-top:10px;color:#2a2a2a;text-shadow:0px 1px 1px #ffffff;filter:dropshadow(color=#ffffff,offx=0,offy=1); margin-bottom: 50px;}
 article p{font-size:1.1em;margin:13px 0;line-height:130%;}
 article p a{text-decoration:none;border-bottom:1px dotted #000;color:#000;}
 article p a:hover{color: #ff002a;}
@@ -37,7 +37,7 @@ nav a:hover{color:white;}
 .postdate{color:#777;}
 a.button{font-family:Museo-300;font-size:18px;text-decoration:none;color:#48433e;display: block;padding: 10px; text-shadow:0px 1px 1px #fff;filter:dropshadow(color=#fff,offx=0,offy=1); text-align: center; -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1.0); box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1.0); -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.3);}
 /*a.button{font-family:Museo-300;font-size:18px;text-decoration:none;color:#4a4641;background: url(../img/sprite.png) -264px 0px no-repeat;display: block;width: 146px;height: 41px;line-height:41px;margin:10px 15px;text-shadow:0px 1px 1px #fff;filter:dropshadow(color=#fff,offx=0,offy=1); text-align: center;}*/
-a.button:hover{-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); background-color: rgba(0, 0, 0, 0.1);}
+a.button:hover{-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2); background-color: rgba(0, 0, 0, 0.1); color: black;}
 
 /* Syntax highlighting w/ Pygments:*/
 .highlight{font-family:Monaco,monospace;background-color:#272822;border:1px solid #000000;padding:10px;font-size:1.3em;margin:10px 0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;text-shadow:none;filter:dropshadow(color=#fff,offx=0,offy=0);line-height:110%;}
