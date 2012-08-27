@@ -17,7 +17,7 @@ published: true
 Presenting HN Beta
 ------------------
 
-I have been writing a Hacker News client for Android as a pet project, with the intention to eventually open-source it. Due to consulting and development work, I currently don't have the time to finish the app 100% in the next weeks, so - i decided to just release it now :)
+I have been writing a Hacker News client for Android as a pet project, with the intention to eventually open-source it. Due to consulting and development work, I currently don't have the time to finish the app 100% in the next days, so - i decided to just release it now :)
 
 Why another HN reader app?
 --------------------------
